@@ -48,8 +48,10 @@ public class SwipePhotoPage {
 		Thread.sleep(5000);
 		initialOKButton.click();
         Assert.assertTrue(ViewsOption.isDisplayed());
+		reportGenerator.logAndCaptureScreenshot(driver,"HomePage","Views Option Displayed", Status.PASS);
 		ViewsOption.click();
-		reportGenerator.logMessage("View Option Clicked", Status.PASS);
+		reportGenerator.logMessage("ViewsOption clicked", Status.PASS);
+
 		try {
 			this.swipeActionMethod("DOWN", driver);
 			reportGenerator.logMessage("Down Swipe Worked", Status.PASS);
@@ -78,6 +80,7 @@ public class SwipePhotoPage {
 		
 		String focus = FirstImg.getAttribute("focusable");
 		Assert.assertEquals("true", focus);
+		reportGenerator.logAndCaptureScreenshot(driver, "BeforeSwipe", "BeforeSwipe Screenshot Taken", Status.PASS);
 		System.out.println(focus);
 
 		Thread.sleep(900);
@@ -88,7 +91,7 @@ public class SwipePhotoPage {
 		// AFTER SWIPE
 		String focus1 = FirstImg.getAttribute("focusable");
 		Assert.assertEquals("false", focus1);
-		reportGenerator.logMessage("Successfully Photo was Moved to Left", Status.PASS);
+		reportGenerator.logAndCaptureScreenshot(driver, "AfterSwipe", "AfterSwipe Screenshot Taken", Status.PASS);
 
 		System.out.println(focus1);
 

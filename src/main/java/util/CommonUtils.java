@@ -16,9 +16,6 @@ public class CommonUtils {
 	        file = new FileInputStream(dir+"/src/main/resources/config.properties");
 	        properties.load(file);
 
-	        // Access values using the key
-	        String value = properties.getProperty("browserName");
-	        System.out.println(value);
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    } finally {
