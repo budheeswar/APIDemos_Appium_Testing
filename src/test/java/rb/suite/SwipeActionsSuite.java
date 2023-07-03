@@ -1,5 +1,11 @@
 package rb.suite;
 
+import java.net.MalformedURLException;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -8,14 +14,6 @@ import io.appium.java_client.android.AndroidDriver;
 import rb.page.SwipePhotoPage;
 import reportG.ReportGeneratorC;
 import util.BaseClass;
-
-import org.testng.annotations.BeforeMethod;
-
-import java.net.MalformedURLException;
-
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.AfterSuite;
 
 public class SwipeActionsSuite extends BaseClass {
 	AndroidDriver driver = null;
@@ -43,6 +41,7 @@ public class SwipeActionsSuite extends BaseClass {
 		
 		try {
 			reportGenerator.setUpReportGenerator("testSwipeGestures");
+			
 			driver = super.getAndroidDriver();
 			Thread.sleep(4500);
 		} catch (MalformedURLException e) {
@@ -57,12 +56,14 @@ public class SwipeActionsSuite extends BaseClass {
 
 	@BeforeSuite
 	public void beforeSuite() {
+		super.startAppiumServer();
 		
 	}
 
 	@AfterSuite
 	public void afterSuite() {
 		super.closeDriver(driver);
+		super.stopServer();
 	}
 
 }
