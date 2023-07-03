@@ -40,6 +40,7 @@ public class SwipeActionsSuite extends BaseClass {
 	@BeforeMethod
 	public void beforeMethod() throws InterruptedException {
 		reportGenerator = new ReportGeneratorC();
+		
 		try {
 			reportGenerator.setUpReportGenerator("testSwipeGestures");
 			driver = super.getAndroidDriver();
