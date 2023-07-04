@@ -1,0 +1,5 @@
+dummy\Dummy.class
+rb\suite\SwipeActionsSuite.class
+rb\suite\RatingBarSuite.class
+rb\page\RatingStarPage.class
+rb\page\SwipePhotoPage.class

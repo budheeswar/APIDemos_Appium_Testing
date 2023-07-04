@@ -35,7 +35,7 @@ public class ReportGeneratorC {
 		htmlReporter.config().setTheme(Theme.STANDARD);// Default Theme of Report
 
 		// General information related to application
-		extent.setSystemInfo("Application Name", "Appium");
+		extent.setSystemInfo("Application Name", "Appium Testing");
 		extent.setSystemInfo("Author", "R Buddeeswar");
 		test = extent.createTest(methodName);
 
