@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rb.suite.SwipeActionsSuite">
+      <class name="rb.suite.RatingBarSuite">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="beforeMethod"/>
-          <include name="testSwipeGestures"/>
           <include name="afterMethod"/>
           <include name="afterSuite"/>
+          <include name="f"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- rb.suite.SwipeActionsSuite -->
+      </class> <!-- rb.suite.RatingBarSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
