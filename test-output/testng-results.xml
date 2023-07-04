@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-03T14:46:50 IST" name="Default suite" finished-at="2023-07-03T14:47:35 IST" duration-ms="44859">
+  <suite started-at="2023-07-04T11:23:57 IST" name="Default suite" finished-at="2023-07-04T11:24:40 IST" duration-ms="42864">
     <groups>
     </groups>
-    <test started-at="2023-07-03T14:46:50 IST" name="Default test" finished-at="2023-07-03T14:47:35 IST" duration-ms="44859">
-      <class name="rb.suite.SwipeActionsSuite">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:rb.suite.SwipeActionsSuite@194fad1]" started-at="2023-07-03T14:46:50 IST" name="beforeSuite" finished-at="2023-07-03T14:46:50 IST" duration-ms="139" status="PASS">
+    <test started-at="2023-07-04T11:23:57 IST" name="Default test" finished-at="2023-07-04T11:24:40 IST" duration-ms="42864">
+      <class name="rb.suite.RatingBarSuite">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:rb.suite.RatingBarSuite@1807e3f6]" started-at="2023-07-04T11:23:57 IST" name="beforeSuite" finished-at="2023-07-04T11:23:57 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:rb.suite.SwipeActionsSuite@194fad1]" started-at="2023-07-03T14:46:50 IST" name="beforeMethod" finished-at="2023-07-03T14:47:14 IST" duration-ms="23296" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:rb.suite.RatingBarSuite@1807e3f6]" started-at="2023-07-04T11:23:57 IST" name="beforeMethod" finished-at="2023-07-04T11:24:21 IST" duration-ms="23289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testSwipeGestures()[pri:0, instance:rb.suite.SwipeActionsSuite@194fad1]" started-at="2023-07-03T14:47:14 IST" name="testSwipeGestures" finished-at="2023-07-03T14:47:35 IST" duration-ms="21298" status="PASS">
+        <test-method signature="f()[pri:0, instance:rb.suite.RatingBarSuite@1807e3f6]" started-at="2023-07-04T11:24:21 IST" name="f" finished-at="2023-07-04T11:24:36 IST" duration-ms="15272" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSwipeGestures -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:rb.suite.SwipeActionsSuite@194fad1]" started-at="2023-07-03T14:47:35 IST" name="afterMethod" finished-at="2023-07-03T14:47:35 IST" duration-ms="215" status="PASS">
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:rb.suite.RatingBarSuite@1807e3f6]" started-at="2023-07-04T11:24:36 IST" name="afterMethod" finished-at="2023-07-04T11:24:40 IST" duration-ms="4258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:rb.suite.SwipeActionsSuite@194fad1]" started-at="2023-07-03T14:47:35 IST" name="afterSuite" finished-at="2023-07-03T14:47:36 IST" duration-ms="1199" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:rb.suite.RatingBarSuite@1807e3f6]" started-at="2023-07-04T11:24:40 IST" name="afterSuite" finished-at="2023-07-04T11:24:40 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- rb.suite.SwipeActionsSuite -->
+      </class> <!-- rb.suite.RatingBarSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -11,40 +11,38 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 import io.appium.java_client.android.AndroidDriver;
-import rb.page.SwipePhotoPage;
+import rb.page.RatingStarPage;
 import reportG.ReportGeneratorC;
 import util.BaseClass;
 import util.CommonUtils;
 
-public class SwipeActionsSuite extends BaseClass {
+public class RatingBarSuite extends BaseClass{
+
 	AndroidDriver driver = null;
-	ReportGeneratorC reportGenerator =null;
+	ReportGeneratorC reportGenerator = null;
 	CommonUtils utils = null;
-
 	@Test
-	public void testSwipeGestures() {
-
-		reportGenerator.logMessage("Test Started", Status.INFO);
-		SwipePhotoPage swipe=new SwipePhotoPage(driver,reportGenerator);
+	public void f() {
+		reportGenerator.logMessage("Rating Stars Test Started", Status.INFO);
+		RatingStarPage rating=new RatingStarPage(driver,reportGenerator);
 		try {
-			swipe.doSwipeActions(driver);
+			rating.giveRatingStars(driver, 5);
 		} catch (InterruptedException e) {
-			reportGenerator.logMessage("Swipe Action Failed", Status.FAIL);
+			reportGenerator.logMessage("Rating Star Test Failed", Status.FAIL);
 			e.printStackTrace();
 		}
-		reportGenerator.logMessage("Test Completed", Status.INFO);
-		
+		reportGenerator.logMessage("Rating Stars Test Completed", Status.INFO);
 		
 	}
 
 	@BeforeTest
 	public void beforeMethod() throws InterruptedException {
 		reportGenerator = new ReportGeneratorC();
-		utils= new CommonUtils();
+		utils = new CommonUtils();
 		super.startAppiumServer();
 		try {
-			reportGenerator.setUpReportGenerator("testSwipeGestures");
-			
+			reportGenerator.setUpReportGenerator("testRatingStars");
+
 			driver = super.getAndroidDriver();
 			Thread.sleep(4500);
 		} catch (MalformedURLException e) {
@@ -62,7 +60,6 @@ public class SwipeActionsSuite extends BaseClass {
 
 	@BeforeSuite
 	public void beforeSuite() {
-		
 		
 	}
 
