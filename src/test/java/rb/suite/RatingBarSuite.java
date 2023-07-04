@@ -26,7 +26,7 @@ public class RatingBarSuite extends BaseClass{
 		reportGenerator.logMessage("Rating Stars Test Started", Status.INFO);
 		RatingStarPage rating=new RatingStarPage(driver,reportGenerator);
 		try {
-			rating.giveRatingStars(driver, 5);
+			rating.giveRatingStars(driver, 3);
 		} catch (InterruptedException e) {
 			reportGenerator.logMessage("Rating Star Test Failed", Status.FAIL);
 			e.printStackTrace();
